@@ -1,0 +1,14 @@
+# Ignore compiled files
+*.class
+
+# Ignore bin directory (where compiled .class files are stored)
+bin/
+
+# Ignore VS Code settings (optional, personal configs)
+.vscode/
+
+# Ignore system/mac files
+.DS_Store
+
+# Ignore logs
+*.log
