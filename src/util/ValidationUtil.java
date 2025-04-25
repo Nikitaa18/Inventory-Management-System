@@ -11,7 +11,7 @@ public class ValidationUtil {
             try {
                 return Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
-                System.out.println("❌ Invalid number. Please enter a valid integer.");
+                System.out.println("Invalid number. Please enter a valid integer.");
             }
         }
     }
@@ -22,7 +22,7 @@ public class ValidationUtil {
             try {
                 return Double.parseDouble(scanner.nextLine());
             } catch (NumberFormatException e) {
-                System.out.println("❌ Invalid number. Please enter a valid decimal.");
+                System.out.println("Invalid number. Please enter a valid decimal.");
             }
         }
     }
@@ -35,7 +35,7 @@ public class ValidationUtil {
         int value;
         do {
             value = getInt(prompt);
-            if (value <= 0) System.out.println("❌ Please enter a positive number.");
+            if (value <= 0) System.out.println("Please enter a positive number.");
         } while (value <= 0);
         return value;
     }

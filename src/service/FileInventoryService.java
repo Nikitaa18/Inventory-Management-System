@@ -1,10 +1,9 @@
 package service;
 
-import model.Product;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import model.Product;
 
 public class FileInventoryService extends InventoryService {
     private static final String FILE_NAME = "inventory.txt";
@@ -38,7 +37,7 @@ public class FileInventoryService extends InventoryService {
                 writer.newLine();
             }
         } catch (IOException e) {
-            System.out.println("❌ Failed to save inventory: " + e.getMessage());
+            System.out.println("Failed to save inventory: " + e.getMessage());
         }
     }
 
@@ -59,7 +58,7 @@ public class FileInventoryService extends InventoryService {
                 }
             }
         } catch (IOException | NumberFormatException e) {
-            System.out.println("❌ Failed to load inventory: " + e.getMessage());
+            System.out.println("Failed to load inventory: " + e.getMessage());
         }
     }
 
